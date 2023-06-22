@@ -11,7 +11,7 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    HANDLE dynamicLib; // Использование HANDLE вместо HINSTANCE
+    HINSTANCE dynamicLib; 
     dynamicLib = LoadLibrary(L"DynamicLib.dll"); // Загрузка динамической библиотеки
     if (!dynamicLib) {
         std::cerr << "Ошибка загрузки динамической библиотеки" << std::endl;
